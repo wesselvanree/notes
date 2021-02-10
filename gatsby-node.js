@@ -37,30 +37,16 @@ exports.createPages = async function ({ actions, graphql }) {
   data.allMdx.edges.forEach(edge => {
     let slug = edge.node.frontmatter.slug
     const id = edge.node.id
-    // if file is in posts/cases
-    if (edge.node.fileAbsolutePath.match(/src\/posts\/cases/)) {
-      slug =
-        "case/" +
-        edge.node.fileAbsolutePath
-          .split(/\/posts\/cases\//)[1]
-          .split("/index.mdx")[0]
-          .split("/index.md")[0]
-      actions.createPage({
-        path: `/${slug}`,
-        component: require.resolve(`./src/caseStudy.js`),
-        context: { id },
-      })
-    } else {
-      if (edge.node.fileAbsolutePath.match(/src\/posts\/blog/)) {
-        slug = "blog/" + slug
-      } else if (edge.node.fileAbsolutePath.match(/src\/posts\/notes/)) {
-        slug = "notes/" + slug
-      }
-      actions.createPage({
-        path: `/${slug}`,
-        component: require.resolve(`./src/singlePost.js`),
-        context: { id },
-      })
-    }
+
+    // if (edge.node.fileAbsolutePath.match(/src\/posts\/blog/)) {
+    //   slug = "blog/" + slug
+    // } else if (edge.node.fileAbsolutePath.match(/src\/posts\/notes/)) {
+    //   slug = "notes/" + slug
+    // }
+    actions.createPage({
+      path: `/${slug}`,
+      component: require.resolve(`./src/singlePost.js`),
+      context: { id },
+    })
   })
 }

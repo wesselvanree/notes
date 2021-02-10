@@ -8,7 +8,10 @@ const singlePost = ({ data }) => {
     <article id="article">
       <div className="table-of-contents">{data.mdx.tableOfContents}</div>
       <div className="article-header">
-        <p className="article-date">{data.mdx.frontmatter.date}</p>
+        <p className="article-breadcrumbs">
+          <a href="/">Home</a> &nbsp;&gt;&nbsp; {data.mdx.frontmatter.title}
+        </p>
+        {/* <p className="article-date">{data.mdx.frontmatter.date}</p> */}
         <h1 className="pagetitle">{data.mdx.frontmatter.title}</h1>
         {/* <div className="seperator-line"></div> */}
         <p className="article-subtitle">{data.mdx.frontmatter.subtitle}</p>

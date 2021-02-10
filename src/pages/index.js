@@ -7,9 +7,11 @@ const Notes = ({ data }) => {
   for (let i = 0; i < data.allMdx.edges.length; i++) {
     posts.push(
       <li key={i}>
-        <a href={"/notes/" + data.allMdx.edges[i].node.frontmatter.slug}>
-          {data.allMdx.edges[i].node.frontmatter.title}
-        </a>
+        <h2>
+          <a href={data.allMdx.edges[i].node.frontmatter.slug}>
+            {data.allMdx.edges[i].node.frontmatter.title}
+          </a>
+        </h2>
       </li>
     )
   }
@@ -23,7 +25,7 @@ const Notes = ({ data }) => {
 
 export const query = graphql`
   query allNotesQuery {
-    allMdx(filter: { fileAbsolutePath: { regex: "/posts/notes/" } }) {
+    allMdx(filter: { fileAbsolutePath: { regex: "/content/" } }) {
       edges {
         node {
           id
