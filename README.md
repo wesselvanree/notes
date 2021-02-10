@@ -1,5 +1,3 @@
-<h1 align="center">
-  Notes Website
-</h1>
+# [Notes Website](https://wesselvanree.github.io/notes/)
 
 A simple website for some notes.
