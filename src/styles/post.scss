@@ -23,7 +23,7 @@
   }
 
   p {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 
   pre {
@@ -33,9 +33,10 @@
   .katex-display {
     // margin: 56px auto;
     margin: 20px auto;
-    overflow-y: scroll;
     max-width: $articleContentWide;
     width: 100%;
+    opacity: 0.9;
+    overflow-x: scroll;
   }
 
   .seperator-line {

@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import "./styles/post.scss"
 
@@ -9,7 +9,7 @@ const singlePost = ({ data }) => {
       <div className="table-of-contents">{data.mdx.tableOfContents}</div>
       <div className="article-header">
         <p className="article-breadcrumbs">
-          <a href="/">Home</a> &nbsp;&gt;&nbsp; {data.mdx.frontmatter.title}
+          <Link to="/">Home</Link> &nbsp;&gt;&nbsp; {data.mdx.frontmatter.title}
         </p>
         {/* <p className="article-date">{data.mdx.frontmatter.date}</p> */}
         <h1 className="pagetitle">{data.mdx.frontmatter.title}</h1>

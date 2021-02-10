@@ -7,11 +7,11 @@ const Notes = ({ data }) => {
   for (let i = 0; i < data.allMdx.edges.length; i++) {
     posts.push(
       <li key={i}>
-        <h2>
+        <h3>
           <a href={data.allMdx.edges[i].node.frontmatter.slug}>
             {data.allMdx.edges[i].node.frontmatter.title}
           </a>
-        </h2>
+        </h3>
       </li>
     )
   }
