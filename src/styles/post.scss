@@ -36,7 +36,12 @@
     max-width: $articleContentWide;
     width: 100%;
     opacity: 0.9;
-    overflow-x: scroll;
+  }
+
+  @media screen and (max-width: $articleContentWide) {
+    .katex-display {
+      overflow-x: scroll;
+    }
   }
 
   .seperator-line {
