@@ -1,0 +1,219 @@
+@use "../themes/variables" as *;
+/**
+ * theme for JavaScript, CSS and HTML
+ * Loosely based on Monokai textmate theme by http://www.monokai.nl/
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: $codeFontColor;
+  background: none;
+  font-family: $codeFont;
+  font-size: 1em;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+  font-size: 0.9em;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: 20px;
+  margin: 0.5em 0;
+  overflow: auto;
+  margin: 56px auto 56px auto;
+  background-color: $backgroundSecondary;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: 0.1em 0.5em;
+  border-radius: 0.2em;
+  white-space: normal;
+  background-color: $backgroundSecondary;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: $codeComment;
+}
+
+.token.punctuation {
+  color: $codePunctuation;
+  opacity: 0.9;
+}
+
+.token.namespace {
+  opacity: 0.7;
+}
+
+.token.property {
+  color: inherit;
+}
+
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: $codePink;
+}
+
+.token.boolean,
+.token.number {
+  color: $codeGreen;
+}
+
+.token.selector {
+  color: $codePurple;
+}
+
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: $codeRed;
+}
+
+.token.operator {
+  color: $codeLightPurple;
+}
+
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable {
+  color: inherit;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.function,
+.token.class-name {
+  color: $codeCyan;
+}
+
+.token.keyword {
+  color: $codePink;
+}
+
+.token.regex {
+  color: $codeBlue;
+}
+.token.important {
+  color: $codeGreen;
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+// Dark mode
+@media (prefers-color-scheme: dark) {
+  code[class*="language-"],
+  pre[class*="language-"] {
+    color: $codeFontColorDark;
+  }
+
+  /* Code blocks */
+  pre[class*="language-"] {
+    background-color: $backgroundSecondaryDark; // #292a30
+  }
+
+  /* Inline code */
+  :not(pre) > code[class*="language-"] {
+    background-color: $backgroundSecondaryDark;
+  }
+
+  .token.comment,
+  .token.prolog,
+  .token.doctype,
+  .token.cdata {
+    color: $codeCommentDark;
+  }
+
+  .token.punctuation {
+    color: $codePunctuationDark;
+  }
+
+  .token.property {
+    color: inherit;
+  }
+
+  .token.tag,
+  .token.constant,
+  .token.symbol,
+  .token.deleted {
+    color: $codePinkDark;
+  }
+
+  .token.boolean,
+  .token.number {
+    color: $codeGreenDark;
+  }
+
+  .token.selector {
+    color: $codePurpleDark;
+  }
+
+  .token.attr-name,
+  .token.string,
+  .token.char,
+  .token.builtin,
+  .token.inserted {
+    color: $codeRedDark;
+  }
+
+  .token.operator {
+    color: $codeLightPurpleDark;
+  }
+
+  .token.entity,
+  .token.url,
+  .language-css .token.string,
+  .style .token.string,
+  .token.variable {
+    color: inherit;
+  }
+
+  .token.atrule,
+  .token.attr-value,
+  .token.function,
+  .token.class-name {
+    color: $codeCyanDark;
+  }
+
+  .token.keyword {
+    color: $codePinkDark;
+  }
+
+  .token.regex {
+    color: $codeBlueDark;
+  }
+  .token.important {
+    color: $codeGreenDark;
+  }
+}

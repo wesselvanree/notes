@@ -1,0 +1,77 @@
+// GLOBAL VARIABLES
+// -Dark means darkmode value of the variable
+
+// Fonts
+$mainFont: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica",
+  "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
+
+// Spacing
+$articleContent: 640px;
+$maxMainWidth: 1000px;
+
+// Backgrounds
+$backgroundPrimary: #ffffff;
+$backgroundSecondary: #f2f2f7;
+$backgroundTertiary: #f2f2f7;
+$backgroundPrimaryDark: #1c1c1e; // #1c1c1e; #151516;
+$backgroundSecondaryDark: #212127; // #2c2c2e; #212127;
+$backgroundTertiaryDark: #3a3a3c; // #3a3a3c;
+
+// Seperators
+$seperator: #c6c6c8;
+$seperatorTransparent: #6e6e73;
+$seperatorDark: #38383a;
+$seperatorTransparentDark: #545458a6;
+
+// Text
+$textPrimary: #3c3c43;
+$textSecondary: #3c3c4399;
+$textTertiary: #3c3c434d;
+$textQuarternary: #3c3c442e;
+$textPrimaryDark: #ffffff;
+$textSecondaryDark: #ebebf599;
+$textTertiaryDark: #ebebf54d;
+$textQuarternaryDark: #ebebf52e;
+
+// Branding colors
+$primaryColor: #467599;
+$primaryColorDark: #365db3;
+
+// Colors
+$red: #ff3b30;
+$redDark: #ff453a;
+$orange: #ff9500;
+$orangeDark: #ff9f0a;
+$green: #34c759;
+$greenDark: #32d74b;
+$teal: #5ac8fa;
+$tealDark: #64d2ff;
+$blue: #007aff;
+$blueDark: #0a84ff;
+$indigo: #5856d6;
+$indigoDark: #5e5ce6;
+
+// Code - Light
+$codeFont: Menlo, Monaco, "Courier New", Courier, monospace;
+$codeFontColor: #5c5c68;
+$codePink: #e46f9f;
+$codeBlue: #57b5e0;
+$codeCyan: #4eb5d1;
+$codePurple: #a578d8;
+$codeLightPurple: #ba9fd8;
+$codeRed: #dd6b71;
+$codeGreen: #76bfb0;
+$codeComment: #7f8c98;
+$codePunctuation: #413f3f;
+
+// Code - Dark
+$codeFontColorDark: #dfdfe0;
+$codePinkDark: #ff7ab2;
+$codeBlueDark: #6bdfff;
+$codeCyanDark: #4eb0cc;
+$codePurpleDark: #b281eb;
+$codeLightPurpleDark: #dabaff;
+$codeRedDark: #f07178;
+$codeGreenDark: #76bfb0;
+$codeCommentDark: #7f8c98;
+$codePunctuationDark: #dfdfe0;
