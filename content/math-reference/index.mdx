@@ -13,45 +13,55 @@ Keep in mind that it is still recommended to know most of these by hard. But in 
 
 ## Factoring Special Polynomials
 
-$
-x^2 - y^2 = (x+y)(x-y) \\
-x^3 + y^3 = (x+y)(x^2 - xy + y^2) \\
-x^3 - y^3 = (x-y)(x^2 + xy + y^2) \\
-(x+y)^2 = x^2 + 2xy + y^2 \\
-(x-y)^2 = x^2 - 2xy + y^2 \\
-(x+y)^3 = x^3 + 3x^2y + 3xy^2 + y^3 \\
-(x-y)^3 = x^3 - 3x^2y + 3xy^2 - y^3
-$
+$$
+\begin{aligned}
+  x^2 - y^2 &= (x+y)(x-y) \\ \\
+  x^3 + y^3 &= (x+y)(x^2 - xy + y^2) \\
+  x^3 - y^3 &= (x-y)(x^2 + xy + y^2) \\ \\
+  (x+y)^2 &= x^2 + 2xy + y^2 \\
+  (x-y)^2 &= x^2 - 2xy + y^2 \\ \\
+  (x+y)^3 &= x^3 + 3x^2y + 3xy^2 + y^3 \\
+  (x-y)^3 &= x^3 - 3x^2y + 3xy^2 - y^3
+\end{aligned}
+$$
 
 # Trigoniometry
 
-$
+$$
 \sin^2(x) + \cos^2(x) = 1
-$
+$$
 
 ## Addition and Subtraction formulas
 
-$
-\sin(x + y) = \sin(x)\cos(y) + \cos(x)\sin(y) \\
-\sin(x - y) = \sin(x)\cos(y) - \sin(x)\cos(y) \\
-\cos(x + y) = \cos(x)\cos(y) - \sin(x)\sin(y) \\
-\cos(x - y) = \cos(x)\cos(y) + \sin(x)\sin(y)
-$
+$$
+\begin{aligned}
+  \sin(x + y) &= \sin(x)\cos(y) + \cos(x)\sin(y) \\
+  \sin(x - y) &= \sin(x)\cos(y) - \cos(x)\sin(y) \\ \\
+  \cos(x + y) &= \cos(x)\cos(y) - \sin(x)\sin(y) \\
+  \cos(x - y) &= \cos(x)\cos(y) + \sin(x)\sin(y)
+\end{aligned}
+$$
 
 ## Double-Angle Formulas
 
-$
-\sin(2x) = 2\sin(x)\cos(x) \\
-\cos(2x) = \cos^2(x) - \sin^2(x) = 2\cos^2(x) - 1 = 1 - 2\sin^2(x) \\
-\tan(2x) = \frac{2\tan(x)}{1 - \tan^2(x)}
-$
+$$
+\begin{aligned}
+  \sin(2x) &= 2\sin(x)\cos(x) \\
+  \cos(2x) &= \cos^2(x) - \sin^2(x) \\
+  &= 2\cos^2(x) - 1 \\
+  &= 1 - 2\sin^2(x) \\
+  \tan(2x) &= \frac{2\tan(x)}{1 - \tan^2(x)}
+\end{aligned}
+$$
 
 ## Half-Angle Formulas
 
-$
-\sin^2(x) = \frac{1}{2}(1 - \cos(2x)) \\
-\cos^2(x) = \frac{1}{2}(1 + \cos(2x))
-$
+$$
+\begin{aligned}
+  \sin^2(x) &= \frac{1 - \cos(2x)}{2} \\
+  \cos^2(x) &= \frac{1 + \cos(2x)}{2}
+\end{aligned}
+$$
 
 # Functions
 
@@ -59,17 +69,16 @@ $
 
 $$
 \begin{aligned}
-  \frac{d}{dx}(x^p) &= px^{p-1},\quad p \in \R \\
+  \frac{d}{dx}(x^p) &= px^{p-1},\quad p \in \R \\ \\
   \frac{d}{dx}(a^x) &= a^x \ln(a),\quad a > 0 \\
-  \frac{d}{dx}(e^x) &= e^x \\
+  \frac{d}{dx}(e^x) &= e^x \\ \\
   \frac{d}{dx}(\log_a(x)) &= \frac{1}{x\ln(a)},\quad a > 0, a\not = 1 \\
-  \frac{d}{dx}(\ln(x)) &= \frac{1}{x} \\
-  \frac{d}{dx}(e^x) &= e^x \\
+  \frac{d}{dx}(\ln(x)) &= \frac{1}{x} \\ \\
   \frac{d}{dx}(\sin(x)) &= \cos(x) \\
   \frac{d}{dx}(\cos(x)) &= -\sin(x) \\
-  \frac{d}{dx}(\tan(x)) &= \frac{1}{\cos^2(x)} \\
+  \frac{d}{dx}(\tan(x)) &= \frac{1}{\cos^2(x)} \\ \\
   \frac{d}{dx}(\arcsin(x)) &= \frac{1}{\sqrt{1 - x^2}} \\
   \frac{d}{dx}(\arccos(x)) &= - \frac{1}{\sqrt{1 - x^2}} \\
-  \frac{d}{dx}(\arctan(x)) &= - \frac{1}{1 + x^2}
+  \frac{d}{dx}(\arctan(x)) &= \frac{1}{1 + x^2}
 \end{aligned}
 $$
