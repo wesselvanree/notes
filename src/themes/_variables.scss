@@ -16,8 +16,9 @@ $mobilePadding: 14px;
 $backgroundPrimary: #fafbff;
 $backgroundSecondary: #f3f3f7;
 $backgroundTertiary: #eeeef5;
+
 $backgroundPrimaryDark: #141416; // #1c1c1e; #151516;
-$backgroundSecondaryDark: hsl(240, 6%, 12%); // #2c2c2e; #212127;
+$backgroundSecondaryDark: hsl(240, 7%, 12%); // #2c2c2e; #212127;
 $backgroundTertiaryDark: #2d2d30; // #3a3a3c;
 
 // Seperators
@@ -31,7 +32,8 @@ $textPrimary: #3c3c43;
 $textSecondary: #3c3c44b3; // #3c3c4399
 $textTertiary: #3c3c4480; // #3c3c434d
 $textQuarternary: #3c3c442e;
-$textPrimaryDark: #cdced6;
+
+$textPrimaryDark: #e4e4ec;
 $textSecondaryDark: #ebebf599;
 $textTertiaryDark: #ebebf580;
 $textQuarternaryDark: #ebebf52e;
@@ -57,13 +59,13 @@ $indigoDark: #5e5ce6;
 // Code - Light
 $codeFont: Menlo, Monaco, "Courier New", Courier, monospace;
 $codeFontColor: #34343a;
-$codePink: #cf437d;
+$codePink: #9B2393;
 $codeBlue: #3d7db1;
-$codeCyan: #0B4F79;
+$codeCyan: #0f6eaa; // #135985
 $codePurple: #3900A0;
-$codeLightPurple: #6C36A9;
-$codeRed: #C41A16;
-$codeGreen: #326D74;
+$codeLightPurple: #865eb4;
+$codeRed: #c41641;
+$codeGreen: #1b97a5;
 $codeComment: #7f8c98;
 $codePunctuation: #413f3f;
 
@@ -71,10 +73,10 @@ $codePunctuation: #413f3f;
 $codeFontColorDark: #dfdfe0;
 $codePinkDark: #ff7ab2;
 $codeBlueDark: #6bdfff;
-$codeCyanDark: #4eb0cc;
-$codePurpleDark: #b281eb;
+$codeCyanDark: #41A1C0;
+$codePurpleDark: #A167E6;
 $codeLightPurpleDark: #dabaff;
 $codeRedDark: #f07178;
-$codeGreenDark: #76bfb0;
+$codeGreenDark: #67B7A4;
 $codeCommentDark: #7f8c98;
 $codePunctuationDark: #dfdfe0;

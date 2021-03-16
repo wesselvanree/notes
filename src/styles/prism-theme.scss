@@ -82,7 +82,7 @@ pre[class*="language-"] {
 
 .token.boolean,
 .token.number {
-  color: $codeGreen;
+  color: $codePurple;
 }
 
 .token.selector {
@@ -113,11 +113,11 @@ pre[class*="language-"] {
 .token.attr-value,
 .token.function,
 .token.class-name {
-  color: $codeGreen;
+  color: $codeCyan;
 }
 
 .token.keyword {
-  color: $codePurple;
+  color: $codePink;
 }
 
 .token.regex {
@@ -181,7 +181,7 @@ pre[class*="language-"] {
 
   .token.boolean,
   .token.number {
-    color: $codeGreenDark;
+    color: $codePurpleDark;
   }
 
   .token.selector {

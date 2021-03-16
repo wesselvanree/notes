@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import "../styles/main.scss"
 
 const Notes = ({ data }) => {
@@ -8,9 +8,9 @@ const Notes = ({ data }) => {
     posts.push(
       <li key={i}>
         <h3>
-          <a href={"/articles/" + data.allMdx.edges[i].node.frontmatter.slug}>
+          <Link to={"/articles/" + data.allMdx.edges[i].node.frontmatter.slug}>
             {data.allMdx.edges[i].node.frontmatter.title}
-          </a>
+          </Link>
         </h3>
       </li>
     )
