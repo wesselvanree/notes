@@ -6,7 +6,7 @@
 
 module.exports = {
   /* Your site config here */
-  pathPrefix: "/notes",
+  pathPrefix: `/notes`,
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
