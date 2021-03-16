@@ -7,7 +7,6 @@
   font-size: 18px;
 
   .pagebody {
-    max-width: 980px;
     margin: auto;
     line-height: 1.5;
   }
@@ -22,6 +21,7 @@
   p,
   img,
   blockquote,
+  figcaption,
   .katex-display,
   .gatsby-highlight {
     max-width: $articleContent;
@@ -231,7 +231,7 @@
   // Dark mode
   @media (prefers-color-scheme: dark) {
     img {
-      filter: brightness(.7) contrast(1.2);
+      filter: brightness(.8) contrast(1.2);
     }
 
     blockquote {
@@ -259,7 +259,67 @@
       border-color: $seperatorDark;
     }
   }
+
+  // Different kinds of figures
+  figure, .small-image, .medium-image, .large-image {
+    margin: 50px auto;
+    width: 100%;
+    height: auto;
+
+    img {
+      padding: 0;
+      min-width: 100%;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      max-width: initial;
+    }
+
+    figcaption {
+      color: $textTertiary;
+      font-size: 0.8em;
+      text-align: center;
+      margin-top: 8px;
+    }
+  }
+
+  figure, .small-image {
+    padding: 0 14px;
+    max-width: $articleContent;
+  }
+
+  .medium-image {
+    padding: 0;
+    max-width: $articleContentWide;
+  }
+
+  .large-image {
+    padding: 0;
+    max-width: 100vw;
+
+    img {
+      width: 100vw;
+      max-width: none!important;
+      height: auto;
+    }
+
+    .gatsby-resp-image-wrapper {
+      width: 100vw;
+      max-width: 100vw!important;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    figure, .small-image, .medium-image, .large-image {
+      figcaption {
+        color: $textTertiaryDark;
+      }
+    }
+  }
 }
+
 
 @media screen and (min-width: 798px) {
   #article {

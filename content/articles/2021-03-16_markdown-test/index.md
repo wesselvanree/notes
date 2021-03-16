@@ -3,7 +3,6 @@ title: Testing the Markdown Elements in an Article
 subtitle: Trying out the styling of all markdown elements
 slug: markdown-test
 date: 2021-03-16
-category:
 featuredImage: ./images/hero.jpg
 excerpt: When coding a website, you never know how it's goinf to look without really testing it. So in this article, all markdown elements will be visible.
 ---
@@ -21,7 +20,7 @@ excerpt: When coding a website, you never know how it's goinf to look without re
 ```java
 public class HelloWorld {
   public static void main(String[] args) {
-    System.out.println("This code really works");
+    System.out.println("Hello World!");
 
     int x = 7;
     int y = 2 * x + 2;
@@ -121,5 +120,38 @@ Here's a sentence with a footnote. [^1]
 [^1]: This is the footnote.
 
 ---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec hendrerit nibh. Nullam eleifend nisl a sodales laoreet. Donec sodales quam at dolor pharetra, eget molestie enim posuere. Sed bibendum tortor eget nunc pharetra, ultrices malesuada nibh lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc finibus tellus eu finibus volutpat. Donec congue mi in leo hendrerit, in tempus sem viverra. Duis sem leo, pharetra vitae elementum a, pellentesque in nibh.
+
+# Images
+
+Different sizes of images are supported. A small image is shown below.
+
+<figure class="small-image">
+
+![Small size image](images/small.jpg)
+<figcaption>Caption text for small image</figcaption>
+
+</figure>
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec hendrerit nibh. Nullam eleifend nisl a sodales laoreet. Donec sodales quam at dolor pharetra, eget molestie enim posuere. Sed bibendum tortor eget nunc pharetra, ultrices malesuada nibh lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+Furthermore, medium sized images are styled in the following manner.
+
+<figure class="medium-image">
+
+![Medium size image](images/medium.jpg)
+<figcaption>Caption text for medium image</figcaption>
+
+</figure>
+
+But it takes more than good ideas to build and grow a business. It takes people to bring them into reality. Are those people collaborating and sharing their expertise, or are they in conflict and keeping it to themselves? But it takes more than good ideas to build and grow a business. It takes people to bring them into reality. Are those people collaborating and sharing their expertise, or are they in conflict and keeping it to themselves? But it takes more than good ideas to build and grow a business. It takes people to bring them into reality. Are those people collaborating and sharing their expertise, or are they in conflict and keeping it to themselves? But it takes more than good ideas to build and grow a business. It takes people to bring them into reality. Are those people collaborating and sharing their expertise, or are they in conflict and keeping it to themselves?
+
+<figure class="large-image">
+
+![Large size image](images/large.jpg)
+<figcaption>Caption text for large image</figcaption>
+
+</figure>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec hendrerit nibh. Nullam eleifend nisl a sodales laoreet. Donec sodales quam at dolor pharetra, eget molestie enim posuere. Sed bibendum tortor eget nunc pharetra, ultrices malesuada nibh lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc finibus tellus eu finibus volutpat. Donec congue mi in leo hendrerit, in tempus sem viverra. Duis sem leo, pharetra vitae elementum a, pellentesque in nibh.
