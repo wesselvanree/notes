@@ -28,6 +28,12 @@ pre[class*="language-"] {
   hyphens: none;
 }
 
+.line-numbers-rows {
+  padding: 20px 0;
+  padding-left: 10px;
+  border: none!important;
+}
+
 /* Code blocks */
 pre[class*="language-"] {
   padding: 20px;
@@ -35,6 +41,7 @@ pre[class*="language-"] {
   overflow: auto;
   margin: 56px auto 56px auto;
   background-color: $backgroundSecondary;
+  border-radius: 4px;
 }
 
 /* Inline code */
@@ -42,7 +49,8 @@ pre[class*="language-"] {
   padding: 0.1em 0.5em;
   border-radius: 0.2em;
   white-space: normal;
-  background-color: $backgroundSecondary;
+  background-color: $backgroundTertiary;
+  color: $textPrimary;
 }
 
 .token.comment,
@@ -105,11 +113,11 @@ pre[class*="language-"] {
 .token.attr-value,
 .token.function,
 .token.class-name {
-  color: $codeCyan;
+  color: $codeGreen;
 }
 
 .token.keyword {
-  color: $codePink;
+  color: $codePurple;
 }
 
 .token.regex {
@@ -145,7 +153,8 @@ pre[class*="language-"] {
 
   /* Inline code */
   :not(pre) > code[class*="language-"] {
-    background-color: $backgroundSecondaryDark;
+    background-color: $backgroundTertiaryDark;
+    color: $textPrimaryDark;
   }
 
   .token.comment,

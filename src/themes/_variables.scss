@@ -7,14 +7,14 @@ $mainFont: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica",
 
 // Spacing
 $articleContent: 640px;
-$articleContentWide: 740px;
+$articleContentWide: 820px;
 $maxMainWidth: 1000px;
 
 // Backgrounds
-$backgroundPrimary: #ffffff;
-$backgroundSecondary: #f2f2f7;
-$backgroundTertiary: #f2f2f7;
-$backgroundPrimaryDark: #1c1c1e; // #1c1c1e; #151516;
+$backgroundPrimary: #fafbff;
+$backgroundSecondary: #f2f2f8;
+$backgroundTertiary: #eeeef5;
+$backgroundPrimaryDark: #141416; // #1c1c1e; #151516;
 $backgroundSecondaryDark: #212127; // #2c2c2e; #212127;
 $backgroundTertiaryDark: #3a3a3c; // #3a3a3c;
 
@@ -26,8 +26,8 @@ $seperatorTransparentDark: #545458a6;
 
 // Text
 $textPrimary: #3c3c43;
-$textSecondary: #3c3c4399;
-$textTertiary: #3c3c434d;
+$textSecondary: hsla(240, 6%, 25%, 0.7); // #3c3c4399
+$textTertiary: hsla(240, 6%, 25%, 0.5); // #3c3c434d
 $textQuarternary: #3c3c442e;
 $textPrimaryDark: #ffffff;
 $textSecondaryDark: #ebebf599;
@@ -55,13 +55,13 @@ $indigoDark: #5e5ce6;
 // Code - Light
 $codeFont: Menlo, Monaco, "Courier New", Courier, monospace;
 $codeFontColor: #5c5c68;
-$codePink: #e46f9f;
-$codeBlue: #57b5e0;
-$codeCyan: #4eb5d1;
-$codePurple: #a578d8;
-$codeLightPurple: #ba9fd8;
-$codeRed: #dd6b71;
-$codeGreen: #76bfb0;
+$codePink: #cf437d;
+$codeBlue: #3d7db1;
+$codeCyan: #0B4F79;
+$codePurple: #3900A0;
+$codeLightPurple: #6C36A9;
+$codeRed: #C41A16;
+$codeGreen: #326D74;
 $codeComment: #7f8c98;
 $codePunctuation: #413f3f;
 

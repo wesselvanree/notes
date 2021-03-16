@@ -17,13 +17,27 @@
   h4,
   h5,
   h5,
+  blockquote,
   p {
     max-width: $articleContent;
     margin: auto;
   }
 
   p {
+    margin: auto;
+    margin-bottom: 20px;
     opacity: 0.9;
+  }
+
+  blockquote {
+    margin: 20px auto;
+    border-left: 3px solid $textPrimary;
+    padding: 6px 20px;
+    font-size: 1.2em;
+
+    p {
+      margin: 0;
+    }
   }
 
   pre {
@@ -50,18 +64,30 @@
   h3,
   h4,
   h5 {
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 0.2em;
   }
 
   h1 {
-    margin-top: 1.6em;
-    font-size: 2em;
+    margin-top: 1.2em;
+    font-size: 2.2em;
   }
 
   h2 {
-    margin-top: 1em;
-    font-size: 1.5em;
+    margin-top: 0.8em;
+    font-size: 1.7em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  h4 {
+    font-size: 1.2em;
+  }
+
+  h5 {
+    font-size: 1em;
   }
 
   h3,
@@ -72,8 +98,18 @@
 
   .article-header {
     padding-top: 60px;
-    margin: auto;
     margin-bottom: 40px;
+
+    .gatsby-image-wrapper {
+      max-width: $articleContentWide;
+      width: 100%;
+      height: auto;
+      margin: 40px auto!important;
+    }
+  }
+
+  .article-breadcrumbs, .article-metadata, .article-subtitle, .pagetitle {
+    margin: 0 auto;
     max-width: $articleContent;
   }
 
@@ -86,22 +122,23 @@
     }
   }
 
+  .article-metadata {
+    color: $textTertiary;
+    font-size: 14px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+  }
+
   .pagetitle {
-    font-size: 42px;
-    margin: 0;
+    font-size: 48px;
   }
 
   .article-subtitle {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 400;
-    margin-top: 4px;
+    margin-top: 0;
+    margin-bottom: 16px;
     color: $textSecondary;
-  }
-
-  .article-date {
-    color: $textSecondary;
-    font-size: 14px;
-    margin-bottom: 10px;
   }
 
   ul {
@@ -111,6 +148,9 @@
   }
 
   @media (prefers-color-scheme: dark) {
+    img {
+      filter: brightness(.8) contrast(1.2);
+    }
     p {
       opacity: 0.8;
     }

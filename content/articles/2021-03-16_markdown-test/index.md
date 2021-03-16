@@ -1,0 +1,88 @@
+---
+title: Testing my Markdown Setup
+subtitle: Trying out the styling of all markdown elements
+slug: markdown-test
+date: 2021-03-16
+category:
+featuredImage: ./images/hero.jpg
+excerpt: When coding a website, you never know how it's goinf to look without really testing it. So in this article, all markdown elements will be visible.
+---
+
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+```java
+public class HelloWorld {
+  public static void main(String[] args) {
+    System.out.println("This code really works");
+
+    int x = 7;
+    int y = 2 * x + 2;
+
+    System.out.println(y);
+  }
+}
+```
+
+Lorem ipsum dolor sit amet, `consectetur adipiscing elit`. Pellentesque nec hendrerit nibh. Nullam eleifend nisl a sodales laoreet. Donec sodales quam at dolor pharetra, eget molestie enim posuere. Sed bibendum tortor eget nunc pharetra, ultrices malesuada nibh lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc finibus tellus eu finibus volutpat. Donec congue mi in leo hendrerit, in tempus sem viverra. Duis sem leo, pharetra vitae elementum a, pellentesque in nibh.
+
+# Heading 1
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec hendrerit nibh. Nullam eleifend nisl a sodales laoreet. Donec sodales quam at dolor pharetra, eget molestie enim posuere. Sed bibendum tortor eget nunc pharetra, ultrices malesuada nibh lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc finibus tellus eu finibus volutpat. Donec congue mi in leo hendrerit, in tempus sem viverra. Duis sem leo, pharetra vitae elementum a, pellentesque in nibh.
+
+## Heading 2
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec hendrerit nibh. Nullam eleifend nisl a sodales laoreet. Donec sodales quam at dolor pharetra, eget molestie enim posuere.
+
+It is also possible to add some math using KaTeX.
+
+$$
+\begin{aligned}
+\displaystyle {1 +  \frac{q^2}{(1-q)}+\frac{q^6}{(1-q)(1-q^2)}+\cdots }= \prod_{j=0}^{\infty}\frac{1}{(1-q^{5j+2})(1-q^{5j+3})}, \quad\quad \text{for }\lvert q\rvert<1.
+\end{aligned}
+$$
+
+### Heading 3
+
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc finibus tellus eu finibus volutpat. Donec congue mi in leo hendrerit, in tempus sem viverra. Duis sem leo, pharetra vitae elementum a, pellentesque in nibh.
+
+# Heading 1
+
+> This is a blockquote.
+>
+> And it goes on and on.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec hendrerit nibh. Nullam eleifend nisl a sodales laoreet. Donec sodales quam at dolor pharetra, eget molestie enim posuere. Sed bibendum tortor eget nunc pharetra, ultrices malesuada nibh lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc finibus tellus eu finibus volutpat. Donec congue mi in leo hendrerit, in tempus sem viverra. Duis sem leo, pharetra vitae elementum a, pellentesque in nibh.s
+
+```js
+const main = document.querySelector("main");
+const keyCode = document.querySelector(".keyCode");
+const key = document.querySelector(".key");
+const code = document.querySelector(".code");
+const which = document.querySelector(".which");
+const eLocation = document.querySelector(".e-location");
+
+let DarkModeCounter = 0;
+document.body.onkeyup = function (e) {
+  keyCode.innerHTML = e.keyCode;
+  key.innerHTML = "'" + e.key + "'";
+  code.innerHTML = "'" + e.code + "'";
+  which.innerHTML = e.which;
+  eLocation.innerHTML = e.location;
+  if (e.key == 'D' && e.ctrlKey == true) {
+    e.preventdefault;
+    if (main.classList.contains("dark-mode")) {
+      main.classList.remove("dark-mode");
+    } else {
+      main.classList.add("dark-mode");
+    }
+  }
+  console.log(e);
+}
+```

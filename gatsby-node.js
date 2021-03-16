@@ -38,11 +38,12 @@ exports.createPages = async function ({ actions, graphql }) {
     let slug = edge.node.frontmatter.slug
     const id = edge.node.id
 
-    // if (edge.node.fileAbsolutePath.match(/src\/posts\/blog/)) {
-    //   slug = "blog/" + slug
-    // } else if (edge.node.fileAbsolutePath.match(/src\/posts\/notes/)) {
-    //   slug = "notes/" + slug
-    // }
+    if (edge.node.fileAbsolutePath.match(/content\/articles/)) {
+      slug = "articles/" + slug
+    } else if (edge.node.fileAbsolutePath.match(/src\/posts\/notes/)) {
+      slug = "notes/" + slug
+    }
+
     actions.createPage({
       path: `/${slug}`,
       component: require.resolve(`./src/singlePost.js`),
