@@ -1,5 +1,5 @@
 ---
-title: Testing my Markdown Setup
+title: Testing the Markdown Elements in an Article
 subtitle: Trying out the styling of all markdown elements
 slug: markdown-test
 date: 2021-03-16
@@ -31,16 +31,41 @@ public class HelloWorld {
 }
 ```
 
-Lorem ipsum dolor sit amet, `consectetur adipiscing elit`. Pellentesque nec hendrerit nibh. Nullam eleifend nisl a sodales laoreet. Donec sodales quam at dolor pharetra, eget molestie enim posuere. Sed bibendum tortor eget nunc pharetra, ultrices malesuada nibh lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc finibus tellus eu finibus volutpat. Donec congue mi in leo hendrerit, in tempus sem viverra. Duis sem leo, pharetra vitae elementum a, pellentesque in nibh.
+*Lorem ipsum dolor* sit amet, `consectetur adipiscing elit`. Pellentesque nec hendrerit nibh. Nullam eleifend nisl a sodales laoreet. Donec sodales quam at dolor pharetra, eget molestie enim posuere. Sed bibendum tortor eget nunc pharetra, ultrices malesuada nibh lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. $y = 2x + 4$ Nunc finibus tellus eu finibus volutpat. Donec congue mi in leo hendrerit, in tempus sem viverra. Duis sem leo, pharetra vitae elementum a, pellentesque in nibh.
+
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
 
 # Heading 1
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec hendrerit nibh. Nullam eleifend nisl a sodales laoreet. Donec sodales quam at dolor pharetra, eget molestie enim posuere. Sed bibendum tortor eget nunc pharetra, ultrices malesuada nibh lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc finibus tellus eu finibus volutpat. Donec congue mi in leo hendrerit, in tempus sem viverra. Duis sem leo, pharetra vitae elementum a, pellentesque in nibh.
+
+### Ordered List
+
+1. First item
+    - Subitem
+2. Second item
+3. Third item
+
+### Unordered List
+
+- First item
+- Second item
+- Third item
+
+### Checklists
+
+- [x] Write the press release
+- [ ] Update the website
+- [ ] Contact the media
+
 
 ## Heading 2
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec hendrerit nibh. Nullam eleifend nisl a sodales laoreet. Donec sodales quam at dolor pharetra, eget molestie enim posuere.
 
-It is also possible to add some math using KaTeX.
+It is also possible to add some math using **KaTeX**.
 
 $$
 \begin{aligned}
@@ -54,11 +79,13 @@ Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc finibus tellu
 
 # Heading 1
 
-> This is a blockquote.
->
-> And it goes on and on.
+> This is a very long blockquote.
+> With a very interesing story.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec hendrerit nibh. Nullam eleifend nisl a sodales laoreet. Donec sodales quam at dolor pharetra, eget molestie enim posuere. Sed bibendum tortor eget nunc pharetra, ultrices malesuada nibh lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc finibus tellus eu finibus volutpat. Donec congue mi in leo hendrerit, in tempus sem viverra. Duis sem leo, pharetra vitae elementum a, pellentesque in nibh.s
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec hendrerit nibh. Nullam eleifend nisl a sodales laoreet. Donec sodales quam at dolor pharetra, eget molestie enim posuere. Sed bibendum tortor eget nunc pharetra, ultrices malesuada nibh lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc finibus tellus eu finibus volutpat. Donec congue mi in leo hendrerit, in tempus sem viverra. Duis sem leo, pharetra vitae elementum a, pellentesque in nibh.
+
+term
+: definition
 
 ```js
 const main = document.querySelector("main");
@@ -86,3 +113,13 @@ document.body.onkeyup = function (e) {
   console.log(e);
 }
 ```
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec hendrerit nibh. Nullam eleifend nisl a sodales laoreet. Donec sodales quam at dolor pharetra, eget molestie enim posuere. Sed bibendum tortor eget nunc pharetra, ultrices malesuada nibh lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc finibus tellus eu finibus volutpat. Donec congue mi in leo hendrerit, in tempus sem viverra. Duis sem leo, pharetra vitae elementum a, pellentesque in nibh.
+
+Here's a sentence with a footnote. [^1]
+
+[^1]: This is the footnote.
+
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec hendrerit nibh. Nullam eleifend nisl a sodales laoreet. Donec sodales quam at dolor pharetra, eget molestie enim posuere. Sed bibendum tortor eget nunc pharetra, ultrices malesuada nibh lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc finibus tellus eu finibus volutpat. Donec congue mi in leo hendrerit, in tempus sem viverra. Duis sem leo, pharetra vitae elementum a, pellentesque in nibh.

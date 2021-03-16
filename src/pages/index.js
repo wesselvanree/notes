@@ -8,7 +8,7 @@ const Notes = ({ data }) => {
     posts.push(
       <li key={i}>
         <h3>
-          <a href={data.allMdx.edges[i].node.frontmatter.slug}>
+          <a href={"/articles/" + data.allMdx.edges[i].node.frontmatter.slug}>
             {data.allMdx.edges[i].node.frontmatter.title}
           </a>
         </h3>

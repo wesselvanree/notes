@@ -1,25 +1,31 @@
 @use "../themes/variables" as *;
 
 #article {
-  padding: 0 14px;
+  // padding: 0 14px;
+  padding-top: 12vh;
   padding-bottom: 40vh;
+  font-size: 18px;
 
   .pagebody {
     max-width: 980px;
     margin: auto;
     line-height: 1.5;
-    font-size: 17px;
   }
 
+  // Setting max widths
   h1,
   h2,
   h3,
   h4,
   h5,
   h5,
+  p,
+  img,
   blockquote,
-  p {
+  .katex-display,
+  .gatsby-highlight {
     max-width: $articleContent;
+    padding: 0 14px;
     margin: auto;
   }
 
@@ -31,12 +37,13 @@
 
   blockquote {
     margin: 20px auto;
-    border-left: 3px solid $textPrimary;
-    padding: 6px 20px;
+    box-sizing: border-box;
     font-size: 1.2em;
 
     p {
       margin: 0;
+      border-left: 3px solid $textPrimary;
+      padding: 6px 10px;
     }
   }
 
@@ -44,12 +51,29 @@
     max-width: $articleContent;
   }
 
+  hr {
+    max-width: $articleContentWithPadding;
+    border: none;
+    border-top: 0.01em solid $seperator;
+    margin: 2em 14px;
+  }
+
+  @media screen and (min-width: $articleContent) {
+    hr {
+      margin: 3em auto;
+    }
+  }
+
   .katex-display {
     // margin: 56px auto;
     margin: 20px auto;
     max-width: $articleContentWide;
     width: 100%;
-    opacity: 0.9;
+    // opacity: 0.9;
+    overflow-x: scroll;
+    overflow-y: auto;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 
   .seperator-line {
@@ -70,20 +94,20 @@
 
   h1 {
     margin-top: 1.2em;
-    font-size: 2.2em;
+    font-size: 1.8em;
   }
 
   h2 {
     margin-top: 0.8em;
-    font-size: 1.7em;
+    font-size: 1.5em;
   }
 
   h3 {
-    font-size: 1.4em;
+    font-size: 1.3em;
   }
 
   h4 {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
   h5 {
@@ -96,6 +120,30 @@
     margin-top: 0.6em;
   }
 
+  // Lists and tables
+  ul, ol {
+    margin: auto;
+    padding-left: 40px;
+    max-width: $articleContentWithPadding;
+  }
+
+  .contains-task-list {
+    list-style-type: none;
+    padding-left: 16px;
+  }
+
+  table {
+    margin: auto;
+    box-sizing: border-box;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 2px 12px;
+    border: 1px solid $seperator;
+  }
+
+  // Article header
   .article-header {
     padding-top: 60px;
     margin-bottom: 40px;
@@ -105,6 +153,11 @@
       width: 100%;
       height: auto;
       margin: 40px auto!important;
+
+      img {
+        max-width: initial;
+        padding: 0;
+      }
     }
   }
 
@@ -124,42 +177,75 @@
 
   .article-metadata {
     color: $textTertiary;
-    font-size: 14px;
+    font-size: 0.8em;
     margin-bottom: 10px;
     margin-top: 8px;
   }
 
   .pagetitle {
-    font-size: 48px;
+    font-size: 2em;
   }
 
   .article-subtitle {
-    font-size: 26px;
+    font-size: 1.2em;
     font-weight: 400;
     margin-top: 0;
     margin-bottom: 16px;
     color: $textSecondary;
   }
 
-  ul {
-    margin: auto;
-    padding-left: 40px;
-    max-width: $articleContent;
+  @media screen and (min-width: 798px) {
+    .pagetitle {
+      font-size: 2.4em;
+    }
+
+    .article-subtitle {
+      font-size: 1.6em;
+    }
+
+    h1 {
+      font-size: 2.2em;
+    }
+
+    h2 {
+      font-size: 1.7em;
+    }
+
+    h3 {
+      font-size: 1.4em;
+    }
+
+    h4 {
+      font-size: 1.2em;
+    }
+
+    h5 {
+      font-size: 1em;
+    }
+
+    .katex-display {
+      overflow: initial;
+    }
   }
 
+  // Dark mode
   @media (prefers-color-scheme: dark) {
     img {
-      filter: brightness(.8) contrast(1.2);
+      filter: brightness(.7) contrast(1.2);
     }
-    p {
-      opacity: 0.8;
+
+    blockquote {
+      p {
+        border-color: $textPrimaryDark;
+      }
     }
+
     .article-subtitle {
       color: $textSecondaryDark;
     }
 
-    .article-date {
-      color: $textSecondaryDark;
+    .article-metadata {
+      color: $textTertiaryDark;
     }
 
     .article-breadcrumbs {
@@ -168,5 +254,15 @@
         color: $textPrimaryDark;
       }
     }
+
+    th, td {
+      border-color: $seperatorDark;
+    }
+  }
+}
+
+@media screen and (min-width: 798px) {
+  #article {
+    font-size: 19px;
   }
 }

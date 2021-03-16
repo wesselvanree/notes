@@ -6,17 +6,19 @@ $mainFont: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Helvetica",
   "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;
 
 // Spacing
-$articleContent: 640px;
-$articleContentWide: 820px;
+$articleContentWithPadding: 612px;
+$articleContent: 684px;
+$articleContentWide: 800px;
 $maxMainWidth: 1000px;
+$mobilePadding: 14px;
 
 // Backgrounds
 $backgroundPrimary: #fafbff;
-$backgroundSecondary: #f2f2f8;
+$backgroundSecondary: #f3f3f7;
 $backgroundTertiary: #eeeef5;
 $backgroundPrimaryDark: #141416; // #1c1c1e; #151516;
-$backgroundSecondaryDark: #212127; // #2c2c2e; #212127;
-$backgroundTertiaryDark: #3a3a3c; // #3a3a3c;
+$backgroundSecondaryDark: hsl(240, 6%, 12%); // #2c2c2e; #212127;
+$backgroundTertiaryDark: #2d2d30; // #3a3a3c;
 
 // Seperators
 $seperator: #c6c6c8;
@@ -26,12 +28,12 @@ $seperatorTransparentDark: #545458a6;
 
 // Text
 $textPrimary: #3c3c43;
-$textSecondary: hsla(240, 6%, 25%, 0.7); // #3c3c4399
-$textTertiary: hsla(240, 6%, 25%, 0.5); // #3c3c434d
+$textSecondary: #3c3c44b3; // #3c3c4399
+$textTertiary: #3c3c4480; // #3c3c434d
 $textQuarternary: #3c3c442e;
-$textPrimaryDark: #ffffff;
+$textPrimaryDark: #cdced6;
 $textSecondaryDark: #ebebf599;
-$textTertiaryDark: #ebebf54d;
+$textTertiaryDark: #ebebf580;
 $textQuarternaryDark: #ebebf52e;
 
 // Branding colors
@@ -54,7 +56,7 @@ $indigoDark: #5e5ce6;
 
 // Code - Light
 $codeFont: Menlo, Monaco, "Courier New", Courier, monospace;
-$codeFontColor: #5c5c68;
+$codeFontColor: #34343a;
 $codePink: #cf437d;
 $codeBlue: #3d7db1;
 $codeCyan: #0B4F79;
